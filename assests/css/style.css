@@ -1,102 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-
-body{
-    font-family: "Roboto", sans-serif;
+body {
+    font-family: "Space Grotesk", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Headercreate */
 
-header{
+header {
     align-items: center;
     background-color: #F8F8FF;
     box-shadow: 0 0 20px 10px #C0C0C0;
     display: flex;
     justify-content: space-between;
-    
-    
+
+
 }
 
-h1{
+h1 {
     margin-left: 10px;
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
     gap: 10px;
     margin-right: 30px;
-   
+
 
 }
 
-ul li{
-background-color: #808080;
+ul li {
+    background-color: #808080;
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
     color: white;
-    
-    
+
+
 }
 
-ul li:hover{
+ul li:hover {
 
     background-color: #F8F8FF;
     color: black;
-    
-    
+
+
 
 }
 
- main{
+main {
     background: #E5E4E2;
     margin-top: 100px;
     height: 300px;
-     border: 2px solid lightgrey;
-     
-    
+    border: 2px solid lightgrey;
 
-} 
 
-img{
+
+}
+
+img {
     height: 150px;
     border-radius: 100px;
     object-fit: cover;
-   
+
 }
 
-button{
-   margin-right: 100px;
-   margin-top: 10px;
-   
-   width: 130px;
-   margin-left: 10px;
-   background-color: #8B8589;
-   border-radius: 10px;
-   color: white;
-   height: 45px;
+button {
+    margin-right: 100px;
+    margin-top: 10px;
 
-   
+    width: 130px;
+    margin-left: 10px;
+    background-color: #8B8589;
+    border-radius: 10px;
+    color: white;
+    height: 45px;
+
+
 }
 
-a>i{
+a>i {
     font-size: 25px;
     background-color: white;
     border-radius: 5px;
     color: #2A3439;
     object-fit: cover;
-    
-    
+
+
 }
 
-section{
+section {
     display: flex;
     gap: 30px;
     padding: 40px;
-    
+
 }
 
 
+.fa-solid,
+.fa-bars {
+
+    font-size: 32px;
+
+
+}
+
+
+.container>main {
+
+    display: grid;
+    place-items: center;
+
+
+}
+
+@media screen and (max-width:600px) {
+
+
+    ul {
+
+        display: none;
+    }
+
+    main>section {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    main {
+
+        height: 100vh;
+        overflow: auto;
+    }
+
+
+
+}
+
+
+@media screen and (min-width:600px) {
+
+    .fa-solid,
+    .fa-bars {
+
+        display: none;
+    }
+}
